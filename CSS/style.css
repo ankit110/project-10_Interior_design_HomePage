@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  html,body
+  {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+  }
+  
+  html{
+    font-size: 16px;
+    overflow-x: hidden; 
+  }
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background: url("../assets/living_room.webp") no-repeat;
+    background-position: cover;
+    background-size: 100% 100%;
+    
+}
+
+.navbar {
+   display: flex;
+   margin-left: 2em;
+   margin-right: 2em;
+}
+
+.logo {
+    margin-top: 2em;
+    width: 80%;
+}
+
+.hori {
+    width: 80%;
+}
+
+hr {
+    height: 3px;
+    background-color: white;
+    margin-top: 0.9em;
+}
+.lists {
+    display: flex;
+    margin-top: 2em;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    color: #fff;
+    gap: 2em;
+}
+
+.list-items {
+    display: flex;
+    width: 80%;
+    list-style-type: none;
+    gap: 2em;
+    justify-content: flex-end;
+
+}
+
+.lists>i {
+    display: none;
+}
+
+.list-item {
+    display: flex;
+    width: 15%;
+    margin-right: 1.7em;
+    white-space: nowrap;
+}
+
+.contact {
+    display: flex;
+    width: 30%;
+    white-space: nowrap;
+}
+
+.contact>p {
+    white-space: nowrap;
+}
+
+.contact>svg {
+    margin-right: 0.4em;
+}
+
+@media (max-width: 1020px) {
+    .list-items {
+        display: none;
+    }
+
+    .lists>i {
+        display: block;
+    }
+
+
+    .contact {
+        width: 50%;
+    }
+
+    hr {
+        width: 300px;
+        margin-left: 10em;
+    }
+
+
+}
+
+@media (max-width: 700px) {
+    hr {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .lists>i {
+        margin-top: 0.8em;
+    }
+}
+
+.content {
+    display: flex;
+    height: 70vh;
+    margin-top: 4em;
+}
+
+.content-left{
+    width: 60%;
+    margin-top: 4em;
+    margin-left: 2em;
+}
+
+.details {
+    display: flex;
+}
+
+.details>h1 {
+    color: #fff;
+    font-size: 4em;
+}
+
+.content-left>button {
+    margin-top: 2em;
+    padding: 0.9em 1.8em;
+    background-color: transparent;
+    color: #fff;        
+    border: 2px solid #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-radius: 2em;
+    margin-bottom: 2em;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.2em;
+    margin-left: 2em;
+    margin-top: -1em;
+}
+
+.card1 {
+    background-color: #ffffff1c;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6em;
+}
+
+.card1-content {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.card1>svg {
+    margin-left: 0.5em;
+}
+
+.card2 {
+    background-color: #ffffff28;
+    width: 55%;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 7em;
+    position: sticky;
+    margin-left: -2em;
+}
+
+.card2-content {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.card2>svg {
+    margin-left: 1em;
+    margin-top: 0.8em;
+    margin-bottom: 1em;
+}
+
+
+.content>.content-right>.cards>.main2>.card2>svg {
+    width: 70px;
+    height: 50px;
+    background-color: #fff;
+    padding: 2px 20px;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 1000px) {
+    .content-right {
+        display: flex;
+        width: 100%;
+    }
+
+
+    .content-left {
+        
+        width: 90%;
+        font-size: 60%;
+        margin-right: 5em;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        font-size: 1.2em;
+        margin-top: -1em;
+    }
+
+    .card1-content {
+        margin-right: 1em;
+    }
+
+    .card1 {
+        background-color: #ffffff1c;
+        width: 90%;
+        display: flex;  
+        flex-direction: column;
+        margin-left: 0em;
+        margin-top: 2em;
+    }
+
+    .card2 {
+        background-color: #ffffff28;
+        width: 90%;
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        position: sticky;
+        margin-left: 0em;
+    }
+}
+
+
+@media (max-width : 600px) {
+    .container {
+        height: unset;
+        
+    }
+    .content {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cards {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 2em;
+        
+        color: #fff;
+    }
+
+    .card1 {
+        background-color: rgba(255, 255, 255, 0.226);
+    }
+
+    .card2 {
+        background-color: rgba(255, 255, 255, 0.226);
+    }
+}
